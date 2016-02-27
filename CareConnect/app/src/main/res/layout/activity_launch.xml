@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="rfbonett.careconnect.LaunchActivity"
+    tools:showIn="@layout/activity_launch">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="CareConnect"
+        android:textSize="48dp" />
+
+    <TextView
+        android:id="@+id/promptText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am a"
+        android:textSize="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/title"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="volunteer"
+        android:id="@+id/volunteerButton"
+        android:onClick="volunteerClick"
+        android:layout_below="@+id/promptText"
+        android:background="@drawable/volunteer_button_selector"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/charityButton"
+        android:onClick="charityClick"
+        android:layout_below="@+id/volunteerButton"
+        android:text="charity"
+        android:background="@drawable/charity_button_selector"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginButton"
+        android:layout_alignParentBottom="true"
+        android:text="login"
+        android:background="@drawable/login_button_selector"
+        android:onClick="loginClick"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
